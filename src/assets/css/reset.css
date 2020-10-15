@@ -1,0 +1,120 @@
+/* 清除内外边距 */
+html {
+    -webkit-text-size-adjust:none;
+}
+html, body {
+    width: 100%;
+    -webkit-overflow-scrolling:touch;
+    background: #191B1D;
+}
+html,body,div,table,td,h1,h2,h3,h4,h5,h6, p,span {
+    margin: 0;
+    padding: 0;
+}
+
+/* 设置默认字体 */
+body,div,table,ul,li,span,p,td,button,input,select,textarea {
+    font: 12px PingFangSC-Regular, Microsoft YaHei, '微软雅黑', Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif; /* 用 ascii 字符表示，使得在任何编码下都无问题 */
+    font-style: normal;
+}
+
+/* 设置标题字号 */
+h1 { font-size: 18px; }
+h2 { font-size: 16px; }
+h3 { font-size: 14px; }
+h4, h5, h6 { font-size: 100%; }
+
+/* 消除特殊文本样式 */
+em,var,dfn,ins { font-style: normal; }
+small { font-size: 12px; } /* 小于 12px 的中文很难阅读，让 small 正常化 */
+
+/* 重置列表元素 */
+ul, ol { list-style: none; }
+
+/* 重置文本格式元素 */
+a { text-decoration: none; }
+a:focus { text-decoration: none; }
+a:hover { text-decoration: none; }
+
+/* 重置表单元素 */
+img { 
+    border: none; 
+    outline:none; 
+}
+
+/* 重置表格元素 */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;  
+}
+
+/* 重置 hr */
+hr {
+    border: none;
+    height: 1px;
+}
+
+/* 禁止移动端默认事件 */
+body {
+    -webkit-touch-callout:none;
+    /*-webkit-user-select:none;
+    user-select:none;*/
+}
+
+a, input, button, img {
+    
+    outline:none;
+    -webkit-tap-highlight-color:transparent;
+    
+    &:focus{
+        outline:none;
+    }
+}
+
+button:focus, input:focus, select:focus, textarea:focus {
+    outline: none;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #ffffff inset;
+}
+input:focus::-webkit-contacts-auto-fill-button{
+    opacity: 0;
+}
+input::-webkit-credentials-auto-fill-button {
+    display: none !important;
+    visibility: hidden;
+    pointer-events: none;
+    position: absolute; /* 避免占用 input 元素额外的 padding，正常情况下存在 display: none!; 就可以了 */
+    right: 0;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+   color:#C9C9C9;
+}
+input::-webkit-input-placeholder{
+    line-height:1.5rem;
+}
+.clearfix {
+    clear:both;
+    display:block;
+    height:1px;
+}
+.clear:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+img:not([src]), img[src=""] {
+    opacity: 0;
+}
+
+/* 风云榜背景渐变色 */
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
