@@ -5,7 +5,7 @@ html {
 html, body {
     width: 100%;
     -webkit-overflow-scrolling:touch;
-    background: #191B1D;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F7F7F7 100%);
 }
 html,body,div,table,td,h1,h2,h3,h4,h5,h6, p,span {
     margin: 0;
