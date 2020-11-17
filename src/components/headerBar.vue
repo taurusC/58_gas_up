@@ -33,6 +33,6 @@ export default {
 
 <style lang="less" scoped>
     .headerBar{
-        height: 50px;
+        height: 46px;
     }
 </style>

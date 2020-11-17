@@ -1,5 +1,5 @@
 <template>
-    <van-submit-bar :price="price" :label="label" :loading="loading" currency="" :suffix-label="suffixLabel" button-text="确认支付" @submit="onSubmit" />
+    <van-submit-bar :price="price" :label="label" :loading="loading" currency="" :suffix-label="suffixLabel" :button-text="buttonText" @submit="onSubmit" />
 </template>
 
 <script>
@@ -15,6 +15,10 @@ export default {
         },
         suffixLabel: {
             default: '',
+            type: String
+        },
+        buttonText: {
+            default: '确认支付',
             type: String
         }
     },
